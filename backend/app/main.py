@@ -6,8 +6,7 @@ app = FastAPI(title="LangGraph AI")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173",
-                "https://humanizer-pujlptjxb-ankita-r-projects6.vercel.app"],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -1,0 +1,65 @@
+.tone-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tone-selector__label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.tone-selector__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tone-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text-2);
+  font-size: 12px;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.tone-pill:hover:not(:disabled) {
+  border-color: var(--border-mid);
+  color: var(--text-1);
+  background: var(--bg-hover);
+}
+
+.tone-pill:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tone-pill--active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tone-pill--active:hover:not(:disabled) {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.tone-pill__icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.tone-pill__label {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 400;
+}

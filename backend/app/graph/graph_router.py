@@ -12,8 +12,9 @@ from app.graph.conditional_edges import should_retry
 def ai_score_router(state):
 
     ai_score = state.get("ai_score", 0)
+    retry_count = state.get("retry_count", 0)
 
-    if should_retry(ai_score):
+    if should_retry(ai_score, retry_count):
         return "retry"
 
     return "approved"

@@ -30,10 +30,11 @@
 }
 
 .panel-tag {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-3);
+  color: var(--text-2);
 }
 
 .bar-actions {
@@ -42,8 +43,9 @@
 }
 
 .bar-btn {
-  font-size: 11px;
-  color: var(--text-3);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-2);
   padding: 3px 8px;
   border-radius: var(--r-sm);
   border: 1px solid transparent;

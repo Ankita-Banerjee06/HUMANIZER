@@ -43,14 +43,7 @@
 }
 
 .tone-pill--active {
-  background: var(--accent-dim);
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.tone-pill--active:hover:not(:disabled) {
-  background: var(--accent-dim);
-  color: var(--accent);
+  font-weight: 500;
 }
 
 .tone-pill__icon {

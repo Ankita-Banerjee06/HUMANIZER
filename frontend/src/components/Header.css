@@ -12,6 +12,16 @@
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent-grad);
+}
+
 .header__left {
   display: flex;
   align-items: center;
@@ -20,8 +30,11 @@
 
 .header__mark {
   font-size: 20px;
-  color: var(--accent);
   line-height: 1;
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__wordmark {
@@ -29,8 +42,11 @@
   font-size: 22px;
   font-weight: 800;
   font-style: normal;
-  color: var(--text-1);
   letter-spacing: -0.02em;
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__pipe {

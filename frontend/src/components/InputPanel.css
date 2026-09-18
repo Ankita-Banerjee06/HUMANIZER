@@ -130,7 +130,7 @@
 
 .char-fill {
   height: 100%;
-  background: var(--border-mid);
+  background: var(--accent-grad);
   border-radius: 1px;
   transition: width 0.3s ease, background 0.3s ease;
 }
@@ -176,7 +176,8 @@
 }
 
 .target-input-wrap:focus-within {
-  border-color: var(--accent);
+  border-color: var(--accent-3);
+  box-shadow: 0 0 0 3px var(--accent-dim);
 }
 
 .target-input {
@@ -229,17 +230,19 @@
   gap: 8px;
   padding: 8px 22px;
   border-radius: var(--r-md);
-  background: var(--accent);
+  background: var(--accent-grad);
   color: var(--accent-text);
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  box-shadow: 0 4px 18px -4px rgba(139,92,246,0.55);
   transition: all 0.2s var(--ease);
 }
 
 .humanize-btn:hover:not(:disabled) {
   filter: brightness(1.1);
   transform: translateY(-1px);
+  box-shadow: 0 6px 22px -4px rgba(139,92,246,0.7);
 }
 
 .humanize-btn:active:not(:disabled) {

@@ -7,8 +7,8 @@
 .workspace {
   flex: 1;
   display: grid;
-  gap: 1px;
-  background: var(--border);
+  gap: 2px;
+  background: var(--accent-grad);
   transition: all 0.4s var(--ease);
 }
 
